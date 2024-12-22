@@ -10,54 +10,42 @@ body {
     background: #333;
     color: #fff;
     padding: 15px 0;
+
+    & h1 {
+      margin: 0;
+      font-size: 24px;
+    }
+
+    & .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 15px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
   }
-  
-  .header .container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 15px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-  
-  .header h1 {
-    margin: 0;
-    font-size: 24px;
-  }
-  
+
   .menu {
     display: flex;
     gap: 10px;
     cursor: pointer; /* Добавляем курсор-указатель */
+
+    & a {
+      text-decoration: none;
+      background: #555;
+      color: #fff;
+      padding: 10px 20px;
+      font-size: 16px;
+      border-radius: 4px;
+      transition: background 0.3s;
+      display: inline-block; /* Убедимся, что ссылки занимают место */
+    }
+
+    & a:hover, a.active {
+      background: #777;
+    }
     
-  }
-  
-  .menu a {
-    text-decoration: none;
-    background: #555;
-    color: #fff;
-    padding: 10px 20px;
-    font-size: 16px;
-    border-radius: 4px;
-    transition: background 0.3s;
-    display: inline-block; /* Убедимся, что ссылки занимают место */
-  }
-  
-  .menu a {
-    text-decoration: none;
-    background: #555;
-    color: #fff;
-    padding: 10px 20px;
-    font-size: 16px;
-    border-radius: 4px;
-    transition: background 0.3s;
-    pointer-events: auto;
-  }
-  
-  .menu a:hover,
-  .menu a.active {
-    background: #777;
   }
   
   .content {
@@ -71,10 +59,10 @@ body {
     color: #fff;
     padding: 10px 0;
     text-align: center;
-  }
-  
-  .footer .container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 15px;
+
+    & .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 15px;
+    }
   }
